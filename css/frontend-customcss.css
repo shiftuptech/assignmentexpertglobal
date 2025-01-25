@@ -6,7 +6,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*label.sr-only {
+label.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -14,6 +14,6 @@
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    white-space: nowrap;*/ /* Prevent text wrapping */
-    /*border: 0;
-}*/
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 0;
+}
