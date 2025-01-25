@@ -120,218 +120,217 @@
 
 </head>
 
-<body >
+<body>
     <style>
         .modal-body {
-        position: relative;
-    }
-    
-    .btn-close {
-        z-index: 1; /* Ensure the close button is above the image */
-    }
+            position: relative;
+        }
+
+        .btn-close {
+            z-index: 1; /* Ensure the close button is above the image */
+        }
     </style>
-  
+
     <!-- Add your custom JavaScript -->
     <script>
         // Function to check if the modal has been shown before
         function hasModalBeenShown() {
             return sessionStorage.getItem("modalShown") === "true";
         }
-    
+
         // Function to mark the modal as shown in session storage
         function setModalShown() {
             sessionStorage.setItem("modalShown", "true");
         }
-    
+
         // Wait for the page to fully load
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
 
         });
     </script>
     <!--<style>-->
-<!--  .marquee-container {-->
-<!--    width: 100%;-->
-<!--    height: 40px;-->
+    <!--  .marquee-container {-->
+    <!--    width: 100%;-->
+    <!--    height: 40px;-->
     <!--background-color: #343232; -->
-<!--    overflow: hidden;-->
-<!--    position: relative;-->
-<!--  }-->
-
-<!--  .marquee-content {-->
-<!--    position: absolute;-->
-<!--    top: 0;-->
-<!--    left: 0;-->
-<!--    white-space: nowrap;-->
-<!--    animation: marquee 30s linear infinite;-->
-<!--  }-->
-
-<!--  @keyframes  marquee {-->
-<!--    0% { transform: translateX(100%); }-->
-<!--    100% { transform: translateX(-100%); }-->
-<!--  }-->
-
-<!--  .message {-->
-<!--    font-size: 14px;-->
-<!--    padding: 10px;-->
+    <!--    overflow: hidden;-->
+    <!--    position: relative;-->
+    <!--  }-->
+    <!--  .marquee-content {-->
+    <!--    position: absolute;-->
+    <!--    top: 0;-->
+    <!--    left: 0;-->
+    <!--    white-space: nowrap;-->
+    <!--    animation: marquee 30s linear infinite;-->
+    <!--  }-->
+    <!--  @keyframes  marquee {-->
+    <!--    0% { transform: translateX(100%); }-->
+    <!--    100% { transform: translateX(-100%); }-->
+    <!--  }-->
+    <!--  .message {-->
+    <!--    font-size: 14px;-->
+    <!--    padding: 10px;-->
     <!--color: white; -->
-<!--  }-->
-  
-<!--  .marquee-container:hover .marquee-content{-->
-<!--    animation-play-state: paused !important;-->
-<!--  }-->
-<!--  @media  only screen and (max-width: 768px) {-->
-<!--        .marquee-container {-->
-<!--            width: 100%;-->
-<!--            height: 40px;-->
-            <!--background-color: #343232; -->
-<!--            overflow: hidden;-->
-<!--            position: relative;-->
-<!--          }-->
-<!--        .marquee-content {-->
-<!--            position: absolute;-->
-<!--            top: 0;-->
-<!--            left: 0;-->
-<!--            white-space: nowrap;-->
-<!--            animation: marquee 30s linear infinite;-->
-<!--        }-->
-<!--        .message {-->
-<!--            font-size: 14px;-->
-<!--            padding: 10px;-->
-            <!--color: white;-->
-<!--        }-->
-    
-<!--        @keyframes  marquee {-->
-<!--            0% { transform: translateX(100%); }-->
-<!--            100% { transform: translateX(-100%); }-->
-<!--        }-->
-<!--  }-->
-<!--</style>-->
-<!--<div class="marquee-container py-3 px-10 hidden">-->
-<!--  <div class="marquee-content text-center">-->
-<!--    <div class="message">Special Announcement! Our current WhatsApp number is not working due to some reasons. We now have new whatsapp number ie +923422063431. You can also email us at info@assignmentexpertglobal.com.</div>-->
-<!--  </div>-->
-<!--</div>-->
-<div class="bg-primary-one ">
-    <div class="container lg:flex items-center mx-auto lg:flex-row md:justify-between py-2 px-10 hidden ">
-        <div class=" space-x-3 font-medium text-center text-white">
-            <span>Welcome To Assignment Expert Global</span>
-            <!--<a href="tel:447565181186" class="hover:text-black"><i class="fa fa-phone mr-2"></i>447565181186</a>-->
-            <a href="https://api.whatsapp.com/send?phone=447565181186" class="hover:text-black"><i class="fa fa-whatsapp mr-2"></i>447565181186</a>
-            <a href="mailto:info@assignmentexpertglobal.com" class="hover:text-black"><i class="fa fa-envelope-o mr-2"></i>info@assignmentexpertglobal.com</a>
+    <!--  }-->
+    <!--  .marquee-container:hover .marquee-content{-->
+    <!--    animation-play-state: paused !important;-->
+    <!--  }-->
+    <!--  @media  only screen and (max-width: 768px) {-->
+    <!--        .marquee-container {-->
+    <!--            width: 100%;-->
+    <!--            height: 40px;-->
+    <!--background-color: #343232; -->
+    <!--            overflow: hidden;-->
+    <!--            position: relative;-->
+    <!--          }-->
+    <!--        .marquee-content {-->
+    <!--            position: absolute;-->
+    <!--            top: 0;-->
+    <!--            left: 0;-->
+    <!--            white-space: nowrap;-->
+    <!--            animation: marquee 30s linear infinite;-->
+    <!--        }-->
+    <!--        .message {-->
+    <!--            font-size: 14px;-->
+    <!--            padding: 10px;-->
+    <!--color: white;-->
+    <!--        }-->
+    <!--        @keyframes  marquee {-->
+    <!--            0% { transform: translateX(100%); }-->
+    <!--            100% { transform: translateX(-100%); }-->
+    <!--        }-->
+    <!--  }-->
+    <!--</style>-->
+    <!--<div class="marquee-container py-3 px-10 hidden">-->
+    <!--  <div class="marquee-content text-center">-->
+    <!--    <div class="message">Special Announcement! Our current WhatsApp number is not working due to some reasons. We now have new whatsapp number ie +923422063431. You can also email us at info@assignmentexpertglobal.com.</div>-->
+    <!--  </div>-->
+    <!--</div>-->
+    <div class="bg-primary-one ">
+        <div class="container lg:flex items-center mx-auto lg:flex-row md:justify-between py-2 px-10 hidden ">
+            <div class=" space-x-3 font-medium text-center text-white">
+                <span>Welcome To Assignment Expert Global</span>
+                <!--<a href="tel:447565181186" class="hover:text-black"><i class="fa fa-phone mr-2"></i>447565181186</a>-->
+                <a href="https://api.whatsapp.com/send?phone=447565181186" class="hover:text-black"><i class="fa fa-whatsapp mr-2"></i>447565181186</a>
+                <a href="mailto:info@assignmentexpertglobal.com" class="hover:text-black"><i class="fa fa-envelope-o mr-2"></i>info@assignmentexpertglobal.com</a>
 
+            </div>
+            <div class=" space-x-3 text-white">
+            </div>
         </div>
-        <div class=" space-x-3 text-white">
+
+        <div class="container flex flex-col items-center mx-auto sm:flex-row sm:justify-between py-3 px-10 lg:hidden">
+            <div class=" space-x-3 font-medium text-center">
+                <a href="tel:447565181186" class="text-white hover:text-black"><i class="fa fa-phone mr-2"></i>447565181186</a>
+                <!--<a href="https://api.whatsapp.com/send?phone=447565181186" class="text-white hover:text-black"><i class="fa fa-whatsapp mr-2"></i>03422063431</a>-->
+                <span class="whitespace-nowrap overflow-hidden"><a href="mailto:info@assignmentexpertglobal.com" class="text-white hover:text-black"><i class="fa fa-envelope-o mr-2 "></i>info@assignmentexpertglobal.com</a></span>
+            </div>
+
+            <div class=" space-x-3 text-white">
+            </div>
         </div>
     </div>
-
-    <div class="container flex flex-col items-center mx-auto sm:flex-row sm:justify-between py-3 px-10 lg:hidden">
-        <div class=" space-x-3 font-medium text-center">
-            <a href="tel:447565181186" class="text-white hover:text-black"><i class="fa fa-phone mr-2"></i>447565181186</a>
-            <!--<a href="https://api.whatsapp.com/send?phone=447565181186" class="text-white hover:text-black"><i class="fa fa-whatsapp mr-2"></i>03422063431</a>-->
-            <span class="whitespace-nowrap overflow-hidden"><a href="mailto:info@assignmentexpertglobal.com" class="text-white hover:text-black"><i class="fa fa-envelope-o mr-2 "></i>info@assignmentexpertglobal.com</a></span>    
-        </div>
-         
-        <div class=" space-x-3 text-white">
-        </div>
-    </div>
-</div>
 
     <div class="mx-auto w-full text-gray-700 lg:top-0 xl:sticky bg-white z-10 lg:opacity-95">
-    <div x-data="{ open: false }" id="aa"
-        class="bg-white flex flex-col px-4 mx-auto xl:items-center xl:justify-between xl:flex-row xl:px-16"
-        style="max-width: 1536px;">
-        <div class=" flex flex-row items-center justify-between">
-            <a class="flex items-center py-3 px-2 -mt-4" href="index.html">
-                <img src="imgs/logo.png" alt="Logo" class="h-16 mt-3 my-auto">
-            </a>
-            <button class="xl:hidden rounded-lg focus:outline-none focus:shadow-outline" aria-label="Toggle navigation menu" @click="open = !open">
-                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                    <path x-show="!open" fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd" style="display: none;"></path>
-                </svg>
-            </button>
-
-        </div>
-        <nav :class="{'flex': open, 'hidden': !open}"
-            class="flex-col flex-grow xl:pb-0 hidden xl:flex xl:justify-end xl:flex-row xl:space-x-1">
-
-            <a href="index.html"
-                class="block font-semibold px-4 pt-2 pb-2 border-r active hover:bg-primary-one hover:text-white hover:rounded">Home</a>
-
-            <a href="about-us.html"
-                class="block font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded">About
-                Us</a>
-
-                
-                
-            <div  class="relative" x-data="{ open: false }" @mouseleave="open=false">
-                <button @mouseover="open=true"
-                    class="block w-full text-left font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded">
-                    <span><a href="services.html">Services</a></span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                        class="inline w-4 h-4 ml-1 transition-transform duration-200 transform md:-mt-1 rotate-0">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
+        <div x-data="{ open: false }" id="aa"
+             class="bg-white flex flex-col px-4 mx-auto xl:items-center xl:justify-between xl:flex-row xl:px-16"
+             style="max-width: 1536px;">
+            <div class=" flex flex-row items-center justify-between">
+                <a class="flex items-center py-3 px-2 -mt-4" href="index.html">
+                    <img src="imgs/logo.png" alt="Logo" class="h-16 mt-3 my-auto">
+                </a>
+                <button class="xl:hidden rounded-lg focus:outline-none focus:shadow-outline" aria-label="Toggle navigation menu" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                              clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clip-rule="evenodd" style="display: none;"></path>
                     </svg>
                 </button>
-                <div    x-show="open" x-transition:enter="transition ease-out duration-100"
-                    x-transition:enter-start="transform opacity-0 scale-95"
-                    x-transition:enter-end="transform opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75"
-                    x-transition:leave-start="transform opacity-100 scale-100"
-                    x-transition:leave-end="transform opacity-0 scale-95"
-                    class="hidden absolute right-0 w-full  origin-top-right rounded-md shadow-lg md:w-56 z-40"
-                    :class="{'hidden': !open}" style="display: none;">
-                    <div  class="px-2 py-2 rounded-md shadow bg-white">
-                                                                        <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="thesis-writing-service.html">Thesis Writing  </a>    
-                                                <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="research-paper-writing.html">Research Paper Writing </a>    
-                                                <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="essay-writing-service.html">Essay Writing  </a>    
-                                                <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="dissertation-writing.html">Dissertation Writing </a>    
-                                                <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="academic-writing.html">Academic Writing </a>    
-                                                
-                        
-                                                
-                        
 
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                 class="flex-col flex-grow xl:pb-0 hidden xl:flex xl:justify-end xl:flex-row xl:space-x-1">
+
+                <a href="index.html"
+                   class="block font-semibold px-4 pt-2 pb-2 border-r active hover:bg-primary-one hover:text-white hover:rounded">Home</a>
+
+                <a href="about-us.html"
+                   class="block font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded">
+                    About
+                    Us
+                </a>
+
+
+
+                <div class="relative" x-data="{ open: false }" @mouseleave="open=false">
+                    <button @mouseover="open=true"
+                            class="block w-full text-left font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded">
+                        <span><a href="services.html">Services</a></span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                             class="inline w-4 h-4 ml-1 transition-transform duration-200 transform md:-mt-1 rotate-0">
+                            <path fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                         x-transition:enter-start="transform opacity-0 scale-95"
+                         x-transition:enter-end="transform opacity-100 scale-100"
+                         x-transition:leave="transition ease-in duration-75"
+                         x-transition:leave-start="transform opacity-100 scale-100"
+                         x-transition:leave-end="transform opacity-0 scale-95"
+                         class="hidden absolute right-0 w-full  origin-top-right rounded-md shadow-lg md:w-56 z-40"
+                         :class="{'hidden': !open}" style="display: none;">
+                        <div class="px-2 py-2 rounded-md shadow bg-white">
+                            <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                               href="thesis-writing-service.html">Thesis Writing  </a>
+                            <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                               href="research-paper-writing.html">Research Paper Writing </a>
+                            <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                               href="essay-writing-service.html">Essay Writing  </a>
+                            <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                               href="dissertation-writing.html">Dissertation Writing </a>
+                            <a class="block px-3 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-purple-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                               href="academic-writing.html">Academic Writing </a>
+
+
+
+
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <a href="reviews.html"
-                class="block font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded">Reviews</a>
-            <a href="contact-us.html"
-                class="block font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded whitespace-nowrap">Contact
-                Us</a>
-            <div class="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-6">
-                <a href="order-now.html"
-                    class="animate-wave block font-semibold py-2 px-6 rounded bg-primary-one text-white w-40 xl:w-auto hover:animate-none">
-                    <span>Order Now</span>
+                <a href="reviews.html"
+                   class="block font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded">Reviews</a>
+                <a href="contact-us.html"
+                   class="block font-semibold px-4 pt-2 pb-2 border-r hover:bg-primary-one hover:text-white hover:rounded whitespace-nowrap">
+                    Contact
+                    Us
                 </a>
-                <a href="javascript:void(Tawk_API.toggle())"
-                    class="block font-bold py-2 px-6 rounded border-2 border-primary-one text-primary-one w-40 xl:w-auto">
-                    <span>Live Chat</span>
-                </a>
-            </div>
-        </nav>
+                <div class="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-6">
+                    <a href="order-now.html"
+                       class="animate-wave block font-semibold py-2 px-6 rounded bg-primary-one text-white w-40 xl:w-auto hover:animate-none">
+                        <span>Order Now</span>
+                    </a>
+                    <a href="javascript:void(Tawk_API.toggle())"
+                       class="block font-bold py-2 px-6 rounded border-2 border-primary-one text-primary-one w-40 xl:w-auto">
+                        <span>Live Chat</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
     </div>
-</div>     
 
-      
-    
-    
 
-  
+
+
+
+
     <section class="bg-hero bg-no-repeat bg-center bg-cover">
         <div class="container mx-auto grid grid-cols-12 gap-y-8 lg:gap-y-0 py-10 px-10">
             <div class="col-span-12 lg:col-span-7 xl:col-span-7 my-auto mx-auto">
@@ -342,8 +341,7 @@
                                 No.1 Assignment Writing Service At Affordable Rates
                             </p>
 
-                            <div
-                                class="mt-6 flex flex-col justify-center lg:justify-start items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
+                            <div class="mt-6 flex flex-col justify-center lg:justify-start items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
                                 <a href="javascript:void(Tawk_API.toggle())" class="btn">
                                     Live Chat
                                 </a>
@@ -359,11 +357,10 @@
                 </div>
             </div>
 
-              <div class="col-span-12 lg:col-span-5 xl:col-span-5 md:px-3">
+            <div class="col-span-12 lg:col-span-5 xl:col-span-5 md:px-3">
                 <div class="mx-auto lg:mx-0 sm:max-w-sm md:max-w-md lg:max-w-lg relative text-white rounded-[2.5rem] ">
                     <div class=" text-center ">
-                        <span
-                            class="relative top-4 md:text-2xl text-primary-one text-sm font-extrabold rounded-xl bg-white py-2 px-4 lg:px-12 font-sans">
+                        <span class="relative top-4 md:text-2xl text-primary-one text-sm font-extrabold rounded-xl bg-white py-2 px-4 lg:px-12 font-sans">
                             GET A PRICE QUOTE </b>
                         </span>
                     </div>
@@ -1015,57 +1012,67 @@
                         <div class="flex flex-col">
                             <select id="deadline" name="deadline" class="get-fare form-select">
                                 <option hidden="" value="0" disabled="" selected="">Deadline</option>
-                                                                <option  value="1">15 Days
-                                    
-                            </option>
-                                                                <option  value="2">10 Days
-                                    
-                            </option>
-                                                                <option  value="3">7 Days
-                                    
-                            </option>
-                                                                <option  value="4">6 Days
-                                    
-                            </option>
-                                                                <option  value="5">5 Days
-                                    
-                            </option>
-                                                                <option  value="6">4 Days
-                                    
-                            </option>
-                                                                <option  value="7">3 Days
-                                    
-                            </option>
-                                                                <option  value="8">48 Hours
-                                    
-                            </option>
-                                                                <option  value="9">24 Hours
-                                    
-                            </option>
-                                                                <option  value="10">12 Hours
-                                    
-                            </option>
-                                                                <option  value="11">6 Hours
-                                    
-                            </option>
-                                                            </select>
+                                <option value="1">
+                                    15 Days
+
+                                </option>
+                                <option value="2">
+                                    10 Days
+
+                                </option>
+                                <option value="3">
+                                    7 Days
+
+                                </option>
+                                <option value="4">
+                                    6 Days
+
+                                </option>
+                                <option value="5">
+                                    5 Days
+
+                                </option>
+                                <option value="6">
+                                    4 Days
+
+                                </option>
+                                <option value="7">
+                                    3 Days
+
+                                </option>
+                                <option value="8">
+                                    48 Hours
+
+                                </option>
+                                <option value="9">
+                                    24 Hours
+
+                                </option>
+                                <option value="10">
+                                    12 Hours
+
+                                </option>
+                                <option value="11">
+                                    6 Hours
+
+                                </option>
+                            </select>
                         </div>
 
-                        <div
-                            class="flex flex-col  xl:flex-row  lg:space-y-0 justify-center items-center xl:justify-between text-white   font-medium  text-base   pb-8 ">
+                        <div class="flex flex-col  xl:flex-row  lg:space-y-0 justify-center items-center xl:justify-between text-white   font-medium  text-base   pb-8 ">
                         </div>
                     </div>
 
-                        <div class="flex flex-col justify-center items-center relative -top-6">
-                            <div class="btn whitespace-nowrap"><a href="order-now.html">Proceed to Order</a></div>
-                        </div>
+                    <div class="flex flex-col justify-center items-center relative -top-6">
+                        <div class="btn whitespace-nowrap"><a href="order-now.html">Proceed to Order</a></div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-14 px-10 lg:px-[4.5rem] bg-[#f7f7f7]">
+    <!--<section class="py-14 px-10 lg:px-[4.5rem] bg-[#f7f7f7]">
         <div class="container mx-auto space-y-5 text-center">
 
             <h1 class="text-xl md:text-5xl leading-8 font-bold">Leading Assignment Writing Platform to
@@ -1084,7 +1091,38 @@
             </p>
 
         </div>
+    </section>-->
+    <section class="py-14 px-10 lg:px-[4.5rem] bg-gradient-to-r from-[#f7f7f7] to-[#ffffff]">
+        <div class="container mx-auto space-y-8 text-center">
+            <!-- Heading -->
+            <h1 class="text-3xl md:text-5xl leading-tight font-extrabold text-gray-800 mb-4">
+                Leading Assignment Writing Service for Students Worldwide
+            </h1>
+            <!-- Subheading -->
+            <p class="text-lg md:text-xl text-gray-600 font-medium">
+                Professional, affordable, and research-driven assignment writing services designed to help students globally achieve academic success.
+            </p>
+            <!-- Content Blocks -->
+            <div class="space-y-5 text-gray-700 text-justify md:text-center">
+                <p class="leading-relaxed md:text-lg">
+                    Student life is filled with challenges – managing tight deadlines, excelling in coursework, and maintaining a balance between academic and personal life. At <strong>Assignment Expert Global</strong>, we understand these pressures and provide students with top-notch <strong>assignment writing services</strong> to help them succeed in their academic journey, no matter where they are in the world.
+                </p>
+                <p class="leading-relaxed md:text-lg">
+                    Whether you need an essay, research paper, thesis, or dissertation, our expert writers deliver plagiarism-free, high-quality papers tailored to your specific academic needs. We offer our assignment writing services to students in the UK, US, Australia, and beyond, ensuring that each paper is aligned with the standards of your local educational system.
+                </p>
+                <p class="leading-relaxed md:text-lg">
+                    What sets us apart from other assignment writing companies is our <strong>research-driven approach</strong>, commitment to delivering on time, and our dedication to providing affordable services without compromising on quality. Our UK-based experts have an in-depth understanding of the academic landscape, ensuring that your assignments meet the highest standards.
+                </p>
+            </div>
+            <!-- Call to Action -->
+            <div class="pt-6">
+                <a href="https://assignmentexpertglobal.com/contact-us.html" class="rounded bg-primary-one inline-block bg-[#007bff] hover:bg-[#0056b3] text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300">
+                    Get Professional Assignment Help Now
+                </a>
+            </div>
+        </div>
     </section>
+
 
     <section class="container mx-auto py-8 px-10 lg:px-16">
         <h2 class="text-2xl md:text-3xl font-bold text-center">Expert Help from Professional Assignment Writers : Plagiarism-Free Academic Papers & Affordable Services</h2>
@@ -1163,8 +1201,10 @@
             <p><span>✓ Formatted Papers</span></p>
             <p><span>✓ Excellent Customer Support</span></p>
         </div>
-        <p class="text-center">And what not? Try our online assignment writing service in  and make your grades
-            better!</p>
+        <p class="text-center">
+            And what not? Try our online assignment writing service in  and make your grades
+            better!
+        </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 pt-6 gap-x-8">
             <div>
@@ -1173,13 +1213,15 @@
                     Many students find themselves waking up in the middle of the night, anxious about upcoming deadlines for assignments they haven't completed. In such moments, they often search for assignment writing services to alleviate their stress. With our services, you can put your worries to rest when it comes to urgent project submissions.
                 </p>
                 <p class="text-center">
-                    At Assignment Expert Global, simply share your requirements with us and inform us of your urgent needs. Whether you require assistance within 24 hours or two days, our dedicated writers will reach out to you to ensure your specifications are met. We pride ourselves on delivering top-quality assignment writing help while maintaining high professional standards that align perfectly with your expectations.                </p>
+                    At Assignment Expert Global, simply share your requirements with us and inform us of your urgent needs. Whether you require assistance within 24 hours or two days, our dedicated writers will reach out to you to ensure your specifications are met. We pride ourselves on delivering top-quality assignment writing help while maintaining high professional standards that align perfectly with your expectations.
+                </p>
             </div>
 
             <div>
                 <p class="text-xl font-bold text-center py-4">Elevate Your Academic Success with Assignment Expert Global</p>
                 <p class="text-center">
-                    In today’s competitive landscape, numerous websites offer assignment writing services, but not all can meet the diverse needs of students. Crafting high-quality assignments requires a combination of expertise and experience, and perfection is essential. Fortunately, our platform is dedicated to helping you produce papers that adhere to academic guidelines and are thoroughly written and proofread.</p>
+                    In today’s competitive landscape, numerous websites offer assignment writing services, but not all can meet the diverse needs of students. Crafting high-quality assignments requires a combination of expertise and experience, and perfection is essential. Fortunately, our platform is dedicated to helping you produce papers that adhere to academic guidelines and are thoroughly written and proofread.
+                </p>
                 <p class="text-center">
                     With Assignment Expert Global handling your assignments, you can alleviate your stress and focus on other priorities. We guarantee success for all projects, whether they are minor tasks or major assignments. Trust us to deliver the quality and reliability you need for your academic journey.
                 </p>
@@ -1197,14 +1239,15 @@
 
     </section>
 
-    
+
     <footer class="bg-[#834fa0]">
         <div class=" mx-auto">
             <div class="container grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 lg:gap-y-0 pt-20 pb-8 xl:px-6 mx-auto">
 
                 <div class=" text-center mx-4">
                     <h4 class=" text-xl font-bold text-white">Disclaimer</h4>
-                    <p class="my-4 text-white">assignmentexpertglobal is an online academic support platform, we are dedicated to provide custom online academic assistance to students. Our primary goal is to support learners in their educational journey by offering services that can enhance their understanding of various subjects.
+                    <p class="my-4 text-white">
+                        assignmentexpertglobal is an online academic support platform, we are dedicated to provide custom online academic assistance to students. Our primary goal is to support learners in their educational journey by offering services that can enhance their understanding of various subjects.
                     </p>
                     <p class="my-4 text-white">
                         We emphasize that our papers are intended solely for reference purposes only. Use of our materials for commercial purposes or without proper citation is strictly prohibited.
@@ -1223,7 +1266,7 @@
                         <li>
                             <a href="services.html" class="text-white hover:underline"> Services </a>
                         </li>
-                         <li>
+                        <li>
                             <a href="reviews.html" class="text-white hover:underline"> Reviews </a>
                         </li>
                         <li>
@@ -1234,7 +1277,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center">    
+                <div class="text-center">
                     <h4 class=" text-xl font-bold text-white">Legal</h4>
                     <ul class="my-4 space-y-1 text-primary-one">
                         <li>
@@ -1256,29 +1299,29 @@
                     <h4 class=" text-xl font-bold text-white">Services</h4>
 
                     <ul class="my-4 space-y-1 text-primary-one ">
-                        
-                         
+
+
                         <li>
                             <a href="thesis-writing-service.html" class="text-white hover:underline ">Thesis Writing </a>
-                        </li>    
-                         
+                        </li>
+
                         <li>
                             <a href="research-paper-writing.html" class="text-white hover:underline ">Research Paper Writing</a>
-                        </li>    
-                         
+                        </li>
+
                         <li>
                             <a href="essay-writing-service.html" class="text-white hover:underline ">Essay Writing </a>
-                        </li>    
-                         
+                        </li>
+
                         <li>
                             <a href="dissertation-writing.html" class="text-white hover:underline ">Dissertation Writing</a>
-                        </li>    
-                         
+                        </li>
+
                         <li>
                             <a href="academic-writing.html" class="text-white hover:underline ">Academic Writing</a>
-                        </li>    
-                                                
-                        
+                        </li>
+
+
                     </ul>
                 </div>
 
@@ -1318,58 +1361,58 @@
                 </div>
             </div>
         </div>
-    
-    
-     <div class="fixed bottom-4 left-4 z-20 cursor-pointer ">
-        <div class="h-12 w-12 bg-green-500 shadow-xl rounded-full">
-            <a href="https://api.whatsapp.com/send?phone=447565181186" target="_blank" class="absolute bottom-[4px] left-[4px]  rounded-full cursor-pointer">
-                <svg width="40px" height="40px" viewBox="0 0 1219.547 1225.016">
-                    <path fill="#E0E0E0" d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z">
-                    </path>
-                    <linearGradient id="htwaicona-chat" gradientUnits="userSpaceOnUse" x1="609.77" y1="1190.114" x2="609.77" y2="21.084">
-                        <stop id="s3_1_offset_1" offset="0" stop-color="#25D366"></stop>
-                        <stop id="s3_1_offset_2" offset="1" stop-color="#25D366"></stop>
-                    </linearGradient>
-                    <path fill="url(#htwaicona-chat)" d="M27.875 1190.114l82.211-300.18c-50.719-87.852-77.391-187.523-77.359-289.602.133-319.398 260.078-579.25 579.469-579.25 155.016.07 300.508 60.398 409.898 169.891 109.414 109.492 169.633 255.031 169.57 409.812-.133 319.406-260.094 579.281-579.445 579.281-.023 0 .016 0 0 0h-.258c-96.977-.031-192.266-24.375-276.898-70.5l-307.188 80.548z">
-                    </path>
-                    <image overflow="visible" opacity=".08" width="682" height="639" transform="translate(270.984 291.372)"></image>
-                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M462.273 349.294c-11.234-24.977-23.062-25.477-33.75-25.914-8.742-.375-18.75-.352-28.742-.352-10 0-26.25 3.758-39.992 18.766-13.75 15.008-52.5 51.289-52.5 125.078 0 73.797 53.75 145.102 61.242 155.117 7.5 10 103.758 166.266 256.203 226.383 126.695 49.961 152.477 40.023 179.977 37.523s88.734-36.273 101.234-71.297c12.5-35.016 12.5-65.031 8.75-71.305-3.75-6.25-13.75-10-28.75-17.5s-88.734-43.789-102.484-48.789-23.75-7.5-33.75 7.516c-10 15-38.727 48.773-47.477 58.773-8.75 10.023-17.5 11.273-32.5 3.773-15-7.523-63.305-23.344-120.609-74.438-44.586-39.75-74.688-88.844-83.438-103.859-8.75-15-.938-23.125 6.586-30.602 6.734-6.719 15-17.508 22.5-26.266 7.484-8.758 9.984-15.008 14.984-25.008 5-10.016 2.5-18.773-1.25-26.273s-32.898-81.67-46.234-111.326z">
-                    </path>
-                    <path fill="#FFF" d="M1036.898 176.091C923.562 62.677 772.859.185 612.297.114 281.43.114 12.172 269.286 12.039 600.137 12 705.896 39.633 809.13 92.156 900.13L7 1211.067l318.203-83.438c87.672 47.812 186.383 73.008 286.836 73.047h.255.003c330.812 0 600.109-269.219 600.25-600.055.055-160.343-62.328-311.108-175.649-424.53zm-424.601 923.242h-.195c-89.539-.047-177.344-24.086-253.93-69.531l-18.227-10.805-188.828 49.508 50.414-184.039-11.875-18.867c-49.945-79.414-76.312-171.188-76.273-265.422.109-274.992 223.906-498.711 499.102-498.711 133.266.055 258.516 52 352.719 146.266 94.195 94.266 146.031 219.578 145.992 352.852-.118 274.999-223.923 498.749-498.899 498.749z">
-                    </path>
-                </svg>
-            </a>
+
+
+        <div class="fixed bottom-4 left-4 z-20 cursor-pointer ">
+            <div class="h-12 w-12 bg-green-500 shadow-xl rounded-full">
+                <a href="https://api.whatsapp.com/send?phone=447565181186" target="_blank" class="absolute bottom-[4px] left-[4px]  rounded-full cursor-pointer">
+                    <svg width="40px" height="40px" viewBox="0 0 1219.547 1225.016">
+                        <path fill="#E0E0E0" d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z">
+                        </path>
+                        <linearGradient id="htwaicona-chat" gradientUnits="userSpaceOnUse" x1="609.77" y1="1190.114" x2="609.77" y2="21.084">
+                            <stop id="s3_1_offset_1" offset="0" stop-color="#25D366"></stop>
+                            <stop id="s3_1_offset_2" offset="1" stop-color="#25D366"></stop>
+                        </linearGradient>
+                        <path fill="url(#htwaicona-chat)" d="M27.875 1190.114l82.211-300.18c-50.719-87.852-77.391-187.523-77.359-289.602.133-319.398 260.078-579.25 579.469-579.25 155.016.07 300.508 60.398 409.898 169.891 109.414 109.492 169.633 255.031 169.57 409.812-.133 319.406-260.094 579.281-579.445 579.281-.023 0 .016 0 0 0h-.258c-96.977-.031-192.266-24.375-276.898-70.5l-307.188 80.548z">
+                        </path>
+                        <image overflow="visible" opacity=".08" width="682" height="639" transform="translate(270.984 291.372)"></image>
+                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M462.273 349.294c-11.234-24.977-23.062-25.477-33.75-25.914-8.742-.375-18.75-.352-28.742-.352-10 0-26.25 3.758-39.992 18.766-13.75 15.008-52.5 51.289-52.5 125.078 0 73.797 53.75 145.102 61.242 155.117 7.5 10 103.758 166.266 256.203 226.383 126.695 49.961 152.477 40.023 179.977 37.523s88.734-36.273 101.234-71.297c12.5-35.016 12.5-65.031 8.75-71.305-3.75-6.25-13.75-10-28.75-17.5s-88.734-43.789-102.484-48.789-23.75-7.5-33.75 7.516c-10 15-38.727 48.773-47.477 58.773-8.75 10.023-17.5 11.273-32.5 3.773-15-7.523-63.305-23.344-120.609-74.438-44.586-39.75-74.688-88.844-83.438-103.859-8.75-15-.938-23.125 6.586-30.602 6.734-6.719 15-17.508 22.5-26.266 7.484-8.758 9.984-15.008 14.984-25.008 5-10.016 2.5-18.773-1.25-26.273s-32.898-81.67-46.234-111.326z">
+                        </path>
+                        <path fill="#FFF" d="M1036.898 176.091C923.562 62.677 772.859.185 612.297.114 281.43.114 12.172 269.286 12.039 600.137 12 705.896 39.633 809.13 92.156 900.13L7 1211.067l318.203-83.438c87.672 47.812 186.383 73.008 286.836 73.047h.255.003c330.812 0 600.109-269.219 600.25-600.055.055-160.343-62.328-311.108-175.649-424.53zm-424.601 923.242h-.195c-89.539-.047-177.344-24.086-253.93-69.531l-18.227-10.805-188.828 49.508 50.414-184.039-11.875-18.867c-49.945-79.414-76.312-171.188-76.273-265.422.109-274.992 223.906-498.711 499.102-498.711 133.266.055 258.516 52 352.719 146.266 94.195 94.266 146.031 219.578 145.992 352.852-.118 274.999-223.923 498.749-498.899 498.749z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
         </div>
-    </div> 
-</footer>
-    
-       
-     <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/66fdad9c256fb1049b1c1d49/1i97esbeq"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>     
+    </footer>
 
-    
+
+    <script type="text/javascript">var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); (function () { var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]; s1.async = true; s1.src = "https://embed.tawk.to/66fdad9c256fb1049b1c1d49/1i97esbeq"; s1.charset = "UTF-8"; s1.setAttribute("crossorigin", "*"); s0.parentNode.insertBefore(s1, s0); })();</script>
+
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    
-    
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    
-    
 
-    
-    
-    
-    
 
-   
-    
-    
 
-    
 
-    
+
+
+
+
+
+
+
+
+
+
+
     <!-- FAQ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Swiper JS -->
@@ -1377,35 +1420,35 @@
 
 
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countup.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             const loading =
                 '<svg class="inline-block " width="40px" height="40px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" stroke="#fff"><g transform="rotate(0 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(30 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(60 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(90 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(120 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(150 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(180 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(210 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(240 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(270 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(300 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(330 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fff"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate></rect></g></svg>'
             $("#cost").html(loading)
-            $(".get-fare").change(function(e) {
+            $(".get-fare").change(function (e) {
                 e.preventDefault();
                 var data = {
                     "_token": "VjcPAYm2ZxL337LBg3xg7CmnfLaHvFOmqMzP7Dty",
                     "deadline_id": $('#deadline').val(),
                     "academic_level_id": $('#academic_level').val(),
                 }
-                function foo(callback){
+                function foo(callback) {
                 }
                 foo(myCallback);
 
             });
-            function myCallback(result){
+            function myCallback(result) {
                 $('#cost').html(result.per_page_price);
-                 $('#total-cost').html((result.per_page_price * ($("#no_of_pages").val() == null ? 1 : $("#no_of_pages").val())));
-                 $('.pages-change').change(function(){
-                     $('#total-cost').html((result.per_page_price * ($("#no_of_pages").val() == null ? 1 : $("#no_of_pages").val())))
-                 })
-            } 
+                $('#total-cost').html((result.per_page_price * ($("#no_of_pages").val() == null ? 1 : $("#no_of_pages").val())));
+                $('.pages-change').change(function () {
+                    $('#total-cost').html((result.per_page_price * ($("#no_of_pages").val() == null ? 1 : $("#no_of_pages").val())))
+                })
+            }
 
         });
 
