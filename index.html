@@ -79,7 +79,7 @@
     </style>
 
 
-    <script src="https://kit.fontawesome.com/2c6b599d00.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/2c6b599d00.js" crossorigin="anonymous"></script>-->
 
 
     <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
@@ -244,7 +244,7 @@
             <a class="flex items-center py-3 px-2 -mt-4" href="index.html">
                 <img src="imgs/logo.png" alt="Logo" class="h-16 mt-3 my-auto">
             </a>
-            <button class="xl:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <button class="xl:hidden rounded-lg focus:outline-none focus:shadow-outline" aria-label="Toggle navigation menu" @click="open = !open">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                     <path x-show="!open" fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
@@ -370,643 +370,646 @@
                     <div class=" border-4 border-primary-two mx-auto sm:mx-0 rounded-[1rem] px-2 md:px-8 pt-10 space-y-1 md:space-y-4 ">
                         <input type="hidden" name="paper_type" value="">
                         <div class="flex flex-col mt-2 md:mt-5">
+                            <label for="paper_type" class="sr-only">Choose Paper Type</label>
                             <select name="paper_type" class=" form-select">
                                 <option hidden="" value="0" disabled="" selected="">Select Paper Type</option>
-                                                                <option  value="Essay" >Essay</option>    
-                                                                <option  value="Book Report" >Book Report</option>    
-                                                                <option  value="Research Paper" >Research Paper</option>    
-                                                                <option  value="Term Paper" >Term Paper</option>    
-                                                                <option  value="Thesis" >Thesis</option>    
-                                                                <option  value="Dissertation" >Dissertation</option>    
-                                                                <option  value="Course Work" >Course Work</option>    
-                                                                <option  value="Thesis Proposal" >Thesis Proposal</option>    
-                                                                <option  value="Research Proposal" >Research Proposal</option>    
-                                                                <option  value="Dissertation Proposal" >Dissertation Proposal</option>    
-                                                                <option  value="Assignment" >Assignment</option>    
-                                                                <option  value="Other" >Other</option>    
-                                                            </select>
+                                <option value="Essay">Essay</option>
+                                <option value="Book Report">Book Report</option>
+                                <option value="Research Paper">Research Paper</option>
+                                <option value="Term Paper">Term Paper</option>
+                                <option value="Thesis">Thesis</option>
+                                <option value="Dissertation">Dissertation</option>
+                                <option value="Course Work">Course Work</option>
+                                <option value="Thesis Proposal">Thesis Proposal</option>
+                                <option value="Research Proposal">Research Proposal</option>
+                                <option value="Dissertation Proposal">Dissertation Proposal</option>
+                                <option value="Assignment">Assignment</option>
+                                <option value="Other">Other</option>
+                            </select>
 
                         </div>
 
                         <div class="flex flex-col">
+                            <label for="academic_level" class="sr-only">Choose Academic Level</label>
                             <select name="academic_level" id="academic_level" class="get-fare form-select">
                                 <option hidden="" value="0" disabled="" selected="">Academic Level</option>
-                                                                    <option   value="1">
-                                        Undergraduate
-                                </option>    
-                                                                    <option   value="2">
-                                        Master
-                                </option>    
-                                                                    <option   value="3">
-                                        Phd
-                                </option>    
-                                                            </select>
+                                <option value="1">
+                                    Undergraduate
+                                </option>
+                                <option value="2">
+                                    Master
+                                </option>
+                                <option value="3">
+                                    Phd
+                                </option>
+                            </select>
                         </div>
 
                         <div class="flex flex-col">
+                            <label for="number_of_pages" class="sr-only">Choose Number of Pages</label>
                             <select name="number_of_pages" id="no_of_pages" class=" pages-change form-select">
                                 <option hidden="" value="0" disabled="" selected="">No. of Pages</option>
-                                                                <option  value="1">
+                                <option value="1">
                                     250 Words - 1 Pages
-                                </option>    
-                                                                <option  value="2">
+                                </option>
+                                <option value="2">
                                     500 Words - 2 Pages
-                                </option>    
-                                                                <option  value="3">
+                                </option>
+                                <option value="3">
                                     750 Words - 3 Pages
-                                </option>    
-                                                                <option  value="4">
+                                </option>
+                                <option value="4">
                                     1000 Words - 4 Pages
-                                </option>    
-                                                                <option  value="5">
+                                </option>
+                                <option value="5">
                                     1250 Words - 5 Pages
-                                </option>    
-                                                                <option  value="6">
+                                </option>
+                                <option value="6">
                                     1500 Words - 6 Pages
-                                </option>    
-                                                                <option  value="7">
+                                </option>
+                                <option value="7">
                                     1750 Words - 7 Pages
-                                </option>    
-                                                                <option  value="8">
+                                </option>
+                                <option value="8">
                                     2000 Words - 8 Pages
-                                </option>    
-                                                                <option  value="9">
+                                </option>
+                                <option value="9">
                                     2250 Words - 9 Pages
-                                </option>    
-                                                                <option  value="10">
+                                </option>
+                                <option value="10">
                                     2500 Words - 10 Pages
-                                </option>    
-                                                                <option  value="11">
+                                </option>
+                                <option value="11">
                                     2750 Words - 11 Pages
-                                </option>    
-                                                                <option  value="12">
+                                </option>
+                                <option value="12">
                                     3000 Words - 12 Pages
-                                </option>    
-                                                                <option  value="13">
+                                </option>
+                                <option value="13">
                                     3250 Words - 13 Pages
-                                </option>    
-                                                                <option  value="14">
+                                </option>
+                                <option value="14">
                                     3500 Words - 14 Pages
-                                </option>    
-                                                                <option  value="15">
+                                </option>
+                                <option value="15">
                                     3750 Words - 15 Pages
-                                </option>    
-                                                                <option  value="16">
+                                </option>
+                                <option value="16">
                                     4000 Words - 16 Pages
-                                </option>    
-                                                                <option  value="17">
+                                </option>
+                                <option value="17">
                                     4250 Words - 17 Pages
-                                </option>    
-                                                                <option  value="18">
+                                </option>
+                                <option value="18">
                                     4500 Words - 18 Pages
-                                </option>    
-                                                                <option  value="19">
+                                </option>
+                                <option value="19">
                                     4750 Words - 19 Pages
-                                </option>    
-                                                                <option  value="20">
+                                </option>
+                                <option value="20">
                                     5000 Words - 20 Pages
-                                </option>    
-                                                                <option  value="21">
+                                </option>
+                                <option value="21">
                                     5250 Words - 21 Pages
-                                </option>    
-                                                                <option  value="22">
+                                </option>
+                                <option value="22">
                                     5500 Words - 22 Pages
-                                </option>    
-                                                                <option  value="23">
+                                </option>
+                                <option value="23">
                                     5750 Words - 23 Pages
-                                </option>    
-                                                                <option  value="24">
+                                </option>
+                                <option value="24">
                                     6000 Words - 24 Pages
-                                </option>    
-                                                                <option  value="25">
+                                </option>
+                                <option value="25">
                                     6250 Words - 25 Pages
-                                </option>    
-                                                                <option  value="26">
+                                </option>
+                                <option value="26">
                                     6500 Words - 26 Pages
-                                </option>    
-                                                                <option  value="27">
+                                </option>
+                                <option value="27">
                                     6750 Words - 27 Pages
-                                </option>    
-                                                                <option  value="28">
+                                </option>
+                                <option value="28">
                                     7000 Words - 28 Pages
-                                </option>    
-                                                                <option  value="29">
+                                </option>
+                                <option value="29">
                                     7250 Words - 29 Pages
-                                </option>    
-                                                                <option  value="30">
+                                </option>
+                                <option value="30">
                                     7500 Words - 30 Pages
-                                </option>    
-                                                                <option  value="31">
+                                </option>
+                                <option value="31">
                                     7750 Words - 31 Pages
-                                </option>    
-                                                                <option  value="32">
+                                </option>
+                                <option value="32">
                                     8000 Words - 32 Pages
-                                </option>    
-                                                                <option  value="33">
+                                </option>
+                                <option value="33">
                                     8250 Words - 33 Pages
-                                </option>    
-                                                                <option  value="34">
+                                </option>
+                                <option value="34">
                                     8500 Words - 34 Pages
-                                </option>    
-                                                                <option  value="35">
+                                </option>
+                                <option value="35">
                                     8750 Words - 35 Pages
-                                </option>    
-                                                                <option  value="36">
+                                </option>
+                                <option value="36">
                                     9000 Words - 36 Pages
-                                </option>    
-                                                                <option  value="37">
+                                </option>
+                                <option value="37">
                                     9250 Words - 37 Pages
-                                </option>    
-                                                                <option  value="38">
+                                </option>
+                                <option value="38">
                                     9500 Words - 38 Pages
-                                </option>    
-                                                                <option  value="39">
+                                </option>
+                                <option value="39">
                                     9750 Words - 39 Pages
-                                </option>    
-                                                                <option  value="40">
+                                </option>
+                                <option value="40">
                                     10000 Words - 40 Pages
-                                </option>    
-                                                                <option  value="41">
+                                </option>
+                                <option value="41">
                                     10250 Words - 41 Pages
-                                </option>    
-                                                                <option  value="42">
+                                </option>
+                                <option value="42">
                                     10500 Words - 42 Pages
-                                </option>    
-                                                                <option  value="43">
+                                </option>
+                                <option value="43">
                                     10750 Words - 43 Pages
-                                </option>    
-                                                                <option  value="44">
+                                </option>
+                                <option value="44">
                                     11000 Words - 44 Pages
-                                </option>    
-                                                                <option  value="45">
+                                </option>
+                                <option value="45">
                                     11250 Words - 45 Pages
-                                </option>    
-                                                                <option  value="46">
+                                </option>
+                                <option value="46">
                                     11500 Words - 46 Pages
-                                </option>    
-                                                                <option  value="47">
+                                </option>
+                                <option value="47">
                                     11750 Words - 47 Pages
-                                </option>    
-                                                                <option  value="48">
+                                </option>
+                                <option value="48">
                                     12000 Words - 48 Pages
-                                </option>    
-                                                                <option  value="49">
+                                </option>
+                                <option value="49">
                                     12250 Words - 49 Pages
-                                </option>    
-                                                                <option  value="50">
+                                </option>
+                                <option value="50">
                                     12500 Words - 50 Pages
-                                </option>    
-                                                                <option  value="51">
+                                </option>
+                                <option value="51">
                                     12750 Words - 51 Pages
-                                </option>    
-                                                                <option  value="52">
+                                </option>
+                                <option value="52">
                                     13000 Words - 52 Pages
-                                </option>    
-                                                                <option  value="53">
+                                </option>
+                                <option value="53">
                                     13250 Words - 53 Pages
-                                </option>    
-                                                                <option  value="54">
+                                </option>
+                                <option value="54">
                                     13500 Words - 54 Pages
-                                </option>    
-                                                                <option  value="55">
+                                </option>
+                                <option value="55">
                                     13750 Words - 55 Pages
-                                </option>    
-                                                                <option  value="56">
+                                </option>
+                                <option value="56">
                                     14000 Words - 56 Pages
-                                </option>    
-                                                                <option  value="57">
+                                </option>
+                                <option value="57">
                                     14250 Words - 57 Pages
-                                </option>    
-                                                                <option  value="58">
+                                </option>
+                                <option value="58">
                                     14500 Words - 58 Pages
-                                </option>    
-                                                                <option  value="59">
+                                </option>
+                                <option value="59">
                                     14750 Words - 59 Pages
-                                </option>    
-                                                                <option  value="60">
+                                </option>
+                                <option value="60">
                                     15000 Words - 60 Pages
-                                </option>    
-                                                                <option  value="61">
+                                </option>
+                                <option value="61">
                                     15250 Words - 61 Pages
-                                </option>    
-                                                                <option  value="62">
+                                </option>
+                                <option value="62">
                                     15500 Words - 62 Pages
-                                </option>    
-                                                                <option  value="63">
+                                </option>
+                                <option value="63">
                                     15750 Words - 63 Pages
-                                </option>    
-                                                                <option  value="64">
+                                </option>
+                                <option value="64">
                                     16000 Words - 64 Pages
-                                </option>    
-                                                                <option  value="65">
+                                </option>
+                                <option value="65">
                                     16250 Words - 65 Pages
-                                </option>    
-                                                                <option  value="66">
+                                </option>
+                                <option value="66">
                                     16500 Words - 66 Pages
-                                </option>    
-                                                                <option  value="67">
+                                </option>
+                                <option value="67">
                                     16750 Words - 67 Pages
-                                </option>    
-                                                                <option  value="68">
+                                </option>
+                                <option value="68">
                                     17000 Words - 68 Pages
-                                </option>    
-                                                                <option  value="69">
+                                </option>
+                                <option value="69">
                                     17250 Words - 69 Pages
-                                </option>    
-                                                                <option  value="70">
+                                </option>
+                                <option value="70">
                                     17500 Words - 70 Pages
-                                </option>    
-                                                                <option  value="71">
+                                </option>
+                                <option value="71">
                                     17750 Words - 71 Pages
-                                </option>    
-                                                                <option  value="72">
+                                </option>
+                                <option value="72">
                                     18000 Words - 72 Pages
-                                </option>    
-                                                                <option  value="73">
+                                </option>
+                                <option value="73">
                                     18250 Words - 73 Pages
-                                </option>    
-                                                                <option  value="74">
+                                </option>
+                                <option value="74">
                                     18500 Words - 74 Pages
-                                </option>    
-                                                                <option  value="75">
+                                </option>
+                                <option value="75">
                                     18750 Words - 75 Pages
-                                </option>    
-                                                                <option  value="76">
+                                </option>
+                                <option value="76">
                                     19000 Words - 76 Pages
-                                </option>    
-                                                                <option  value="77">
+                                </option>
+                                <option value="77">
                                     19250 Words - 77 Pages
-                                </option>    
-                                                                <option  value="78">
+                                </option>
+                                <option value="78">
                                     19500 Words - 78 Pages
-                                </option>    
-                                                                <option  value="79">
+                                </option>
+                                <option value="79">
                                     19750 Words - 79 Pages
-                                </option>    
-                                                                <option  value="80">
+                                </option>
+                                <option value="80">
                                     20000 Words - 80 Pages
-                                </option>    
-                                                                <option  value="81">
+                                </option>
+                                <option value="81">
                                     20250 Words - 81 Pages
-                                </option>    
-                                                                <option  value="82">
+                                </option>
+                                <option value="82">
                                     20500 Words - 82 Pages
-                                </option>    
-                                                                <option  value="83">
+                                </option>
+                                <option value="83">
                                     20750 Words - 83 Pages
-                                </option>    
-                                                                <option  value="84">
+                                </option>
+                                <option value="84">
                                     21000 Words - 84 Pages
-                                </option>    
-                                                                <option  value="85">
+                                </option>
+                                <option value="85">
                                     21250 Words - 85 Pages
-                                </option>    
-                                                                <option  value="86">
+                                </option>
+                                <option value="86">
                                     21500 Words - 86 Pages
-                                </option>    
-                                                                <option  value="87">
+                                </option>
+                                <option value="87">
                                     21750 Words - 87 Pages
-                                </option>    
-                                                                <option  value="88">
+                                </option>
+                                <option value="88">
                                     22000 Words - 88 Pages
-                                </option>    
-                                                                <option  value="89">
+                                </option>
+                                <option value="89">
                                     22250 Words - 89 Pages
-                                </option>    
-                                                                <option  value="90">
+                                </option>
+                                <option value="90">
                                     22500 Words - 90 Pages
-                                </option>    
-                                                                <option  value="91">
+                                </option>
+                                <option value="91">
                                     22750 Words - 91 Pages
-                                </option>    
-                                                                <option  value="92">
+                                </option>
+                                <option value="92">
                                     23000 Words - 92 Pages
-                                </option>    
-                                                                <option  value="93">
+                                </option>
+                                <option value="93">
                                     23250 Words - 93 Pages
-                                </option>    
-                                                                <option  value="94">
+                                </option>
+                                <option value="94">
                                     23500 Words - 94 Pages
-                                </option>    
-                                                                <option  value="95">
+                                </option>
+                                <option value="95">
                                     23750 Words - 95 Pages
-                                </option>    
-                                                                <option  value="96">
+                                </option>
+                                <option value="96">
                                     24000 Words - 96 Pages
-                                </option>    
-                                                                <option  value="97">
+                                </option>
+                                <option value="97">
                                     24250 Words - 97 Pages
-                                </option>    
-                                                                <option  value="98">
+                                </option>
+                                <option value="98">
                                     24500 Words - 98 Pages
-                                </option>    
-                                                                <option  value="99">
+                                </option>
+                                <option value="99">
                                     24750 Words - 99 Pages
-                                </option>    
-                                                                <option  value="100">
+                                </option>
+                                <option value="100">
                                     25000 Words - 100 Pages
-                                </option>    
-                                                                <option  value="101">
+                                </option>
+                                <option value="101">
                                     25250 Words - 101 Pages
-                                </option>    
-                                                                <option  value="102">
+                                </option>
+                                <option value="102">
                                     25500 Words - 102 Pages
-                                </option>    
-                                                                <option  value="103">
+                                </option>
+                                <option value="103">
                                     25750 Words - 103 Pages
-                                </option>    
-                                                                <option  value="104">
+                                </option>
+                                <option value="104">
                                     26000 Words - 104 Pages
-                                </option>    
-                                                                <option  value="105">
+                                </option>
+                                <option value="105">
                                     26250 Words - 105 Pages
-                                </option>    
-                                                                <option  value="106">
+                                </option>
+                                <option value="106">
                                     26500 Words - 106 Pages
-                                </option>    
-                                                                <option  value="107">
+                                </option>
+                                <option value="107">
                                     26750 Words - 107 Pages
-                                </option>    
-                                                                <option  value="108">
+                                </option>
+                                <option value="108">
                                     27000 Words - 108 Pages
-                                </option>    
-                                                                <option  value="109">
+                                </option>
+                                <option value="109">
                                     27250 Words - 109 Pages
-                                </option>    
-                                                                <option  value="110">
+                                </option>
+                                <option value="110">
                                     27500 Words - 110 Pages
-                                </option>    
-                                                                <option  value="111">
+                                </option>
+                                <option value="111">
                                     27750 Words - 111 Pages
-                                </option>    
-                                                                <option  value="112">
+                                </option>
+                                <option value="112">
                                     28000 Words - 112 Pages
-                                </option>    
-                                                                <option  value="113">
+                                </option>
+                                <option value="113">
                                     28250 Words - 113 Pages
-                                </option>    
-                                                                <option  value="114">
+                                </option>
+                                <option value="114">
                                     28500 Words - 114 Pages
-                                </option>    
-                                                                <option  value="115">
+                                </option>
+                                <option value="115">
                                     28750 Words - 115 Pages
-                                </option>    
-                                                                <option  value="116">
+                                </option>
+                                <option value="116">
                                     29000 Words - 116 Pages
-                                </option>    
-                                                                <option  value="117">
+                                </option>
+                                <option value="117">
                                     29250 Words - 117 Pages
-                                </option>    
-                                                                <option  value="118">
+                                </option>
+                                <option value="118">
                                     29500 Words - 118 Pages
-                                </option>    
-                                                                <option  value="119">
+                                </option>
+                                <option value="119">
                                     29750 Words - 119 Pages
-                                </option>    
-                                                                <option  value="120">
+                                </option>
+                                <option value="120">
                                     30000 Words - 120 Pages
-                                </option>    
-                                                                <option  value="121">
+                                </option>
+                                <option value="121">
                                     30250 Words - 121 Pages
-                                </option>    
-                                                                <option  value="122">
+                                </option>
+                                <option value="122">
                                     30500 Words - 122 Pages
-                                </option>    
-                                                                <option  value="123">
+                                </option>
+                                <option value="123">
                                     30750 Words - 123 Pages
-                                </option>    
-                                                                <option  value="124">
+                                </option>
+                                <option value="124">
                                     31000 Words - 124 Pages
-                                </option>    
-                                                                <option  value="125">
+                                </option>
+                                <option value="125">
                                     31250 Words - 125 Pages
-                                </option>    
-                                                                <option  value="126">
+                                </option>
+                                <option value="126">
                                     31500 Words - 126 Pages
-                                </option>    
-                                                                <option  value="127">
+                                </option>
+                                <option value="127">
                                     31750 Words - 127 Pages
-                                </option>    
-                                                                <option  value="128">
+                                </option>
+                                <option value="128">
                                     32000 Words - 128 Pages
-                                </option>    
-                                                                <option  value="129">
+                                </option>
+                                <option value="129">
                                     32250 Words - 129 Pages
-                                </option>    
-                                                                <option  value="130">
+                                </option>
+                                <option value="130">
                                     32500 Words - 130 Pages
-                                </option>    
-                                                                <option  value="131">
+                                </option>
+                                <option value="131">
                                     32750 Words - 131 Pages
-                                </option>    
-                                                                <option  value="132">
+                                </option>
+                                <option value="132">
                                     33000 Words - 132 Pages
-                                </option>    
-                                                                <option  value="133">
+                                </option>
+                                <option value="133">
                                     33250 Words - 133 Pages
-                                </option>    
-                                                                <option  value="134">
+                                </option>
+                                <option value="134">
                                     33500 Words - 134 Pages
-                                </option>    
-                                                                <option  value="135">
+                                </option>
+                                <option value="135">
                                     33750 Words - 135 Pages
-                                </option>    
-                                                                <option  value="136">
+                                </option>
+                                <option value="136">
                                     34000 Words - 136 Pages
-                                </option>    
-                                                                <option  value="137">
+                                </option>
+                                <option value="137">
                                     34250 Words - 137 Pages
-                                </option>    
-                                                                <option  value="138">
+                                </option>
+                                <option value="138">
                                     34500 Words - 138 Pages
-                                </option>    
-                                                                <option  value="139">
+                                </option>
+                                <option value="139">
                                     34750 Words - 139 Pages
-                                </option>    
-                                                                <option  value="140">
+                                </option>
+                                <option value="140">
                                     35000 Words - 140 Pages
-                                </option>    
-                                                                <option  value="141">
+                                </option>
+                                <option value="141">
                                     35250 Words - 141 Pages
-                                </option>    
-                                                                <option  value="142">
+                                </option>
+                                <option value="142">
                                     35500 Words - 142 Pages
-                                </option>    
-                                                                <option  value="143">
+                                </option>
+                                <option value="143">
                                     35750 Words - 143 Pages
-                                </option>    
-                                                                <option  value="144">
+                                </option>
+                                <option value="144">
                                     36000 Words - 144 Pages
-                                </option>    
-                                                                <option  value="145">
+                                </option>
+                                <option value="145">
                                     36250 Words - 145 Pages
-                                </option>    
-                                                                <option  value="146">
+                                </option>
+                                <option value="146">
                                     36500 Words - 146 Pages
-                                </option>    
-                                                                <option  value="147">
+                                </option>
+                                <option value="147">
                                     36750 Words - 147 Pages
-                                </option>    
-                                                                <option  value="148">
+                                </option>
+                                <option value="148">
                                     37000 Words - 148 Pages
-                                </option>    
-                                                                <option  value="149">
+                                </option>
+                                <option value="149">
                                     37250 Words - 149 Pages
-                                </option>    
-                                                                <option  value="150">
+                                </option>
+                                <option value="150">
                                     37500 Words - 150 Pages
-                                </option>    
-                                                                <option  value="151">
+                                </option>
+                                <option value="151">
                                     37750 Words - 151 Pages
-                                </option>    
-                                                                <option  value="152">
+                                </option>
+                                <option value="152">
                                     38000 Words - 152 Pages
-                                </option>    
-                                                                <option  value="153">
+                                </option>
+                                <option value="153">
                                     38250 Words - 153 Pages
-                                </option>    
-                                                                <option  value="154">
+                                </option>
+                                <option value="154">
                                     38500 Words - 154 Pages
-                                </option>    
-                                                                <option  value="155">
+                                </option>
+                                <option value="155">
                                     38750 Words - 155 Pages
-                                </option>    
-                                                                <option  value="156">
+                                </option>
+                                <option value="156">
                                     39000 Words - 156 Pages
-                                </option>    
-                                                                <option  value="157">
+                                </option>
+                                <option value="157">
                                     39250 Words - 157 Pages
-                                </option>    
-                                                                <option  value="158">
+                                </option>
+                                <option value="158">
                                     39500 Words - 158 Pages
-                                </option>    
-                                                                <option  value="159">
+                                </option>
+                                <option value="159">
                                     39750 Words - 159 Pages
-                                </option>    
-                                                                <option  value="160">
+                                </option>
+                                <option value="160">
                                     40000 Words - 160 Pages
-                                </option>    
-                                                                <option  value="161">
+                                </option>
+                                <option value="161">
                                     40250 Words - 161 Pages
-                                </option>    
-                                                                <option  value="162">
+                                </option>
+                                <option value="162">
                                     40500 Words - 162 Pages
-                                </option>    
-                                                                <option  value="163">
+                                </option>
+                                <option value="163">
                                     40750 Words - 163 Pages
-                                </option>    
-                                                                <option  value="164">
+                                </option>
+                                <option value="164">
                                     41000 Words - 164 Pages
-                                </option>    
-                                                                <option  value="165">
+                                </option>
+                                <option value="165">
                                     41250 Words - 165 Pages
-                                </option>    
-                                                                <option  value="166">
+                                </option>
+                                <option value="166">
                                     41500 Words - 166 Pages
-                                </option>    
-                                                                <option  value="167">
+                                </option>
+                                <option value="167">
                                     41750 Words - 167 Pages
-                                </option>    
-                                                                <option  value="168">
+                                </option>
+                                <option value="168">
                                     42000 Words - 168 Pages
-                                </option>    
-                                                                <option  value="169">
+                                </option>
+                                <option value="169">
                                     42250 Words - 169 Pages
-                                </option>    
-                                                                <option  value="170">
+                                </option>
+                                <option value="170">
                                     42500 Words - 170 Pages
-                                </option>    
-                                                                <option  value="171">
+                                </option>
+                                <option value="171">
                                     42750 Words - 171 Pages
-                                </option>    
-                                                                <option  value="172">
+                                </option>
+                                <option value="172">
                                     43000 Words - 172 Pages
-                                </option>    
-                                                                <option  value="173">
+                                </option>
+                                <option value="173">
                                     43250 Words - 173 Pages
-                                </option>    
-                                                                <option  value="174">
+                                </option>
+                                <option value="174">
                                     43500 Words - 174 Pages
-                                </option>    
-                                                                <option  value="175">
+                                </option>
+                                <option value="175">
                                     43750 Words - 175 Pages
-                                </option>    
-                                                                <option  value="176">
+                                </option>
+                                <option value="176">
                                     44000 Words - 176 Pages
-                                </option>    
-                                                                <option  value="177">
+                                </option>
+                                <option value="177">
                                     44250 Words - 177 Pages
-                                </option>    
-                                                                <option  value="178">
+                                </option>
+                                <option value="178">
                                     44500 Words - 178 Pages
-                                </option>    
-                                                                <option  value="179">
+                                </option>
+                                <option value="179">
                                     44750 Words - 179 Pages
-                                </option>    
-                                                                <option  value="180">
+                                </option>
+                                <option value="180">
                                     45000 Words - 180 Pages
-                                </option>    
-                                                                <option  value="181">
+                                </option>
+                                <option value="181">
                                     45250 Words - 181 Pages
-                                </option>    
-                                                                <option  value="182">
+                                </option>
+                                <option value="182">
                                     45500 Words - 182 Pages
-                                </option>    
-                                                                <option  value="183">
+                                </option>
+                                <option value="183">
                                     45750 Words - 183 Pages
-                                </option>    
-                                                                <option  value="184">
+                                </option>
+                                <option value="184">
                                     46000 Words - 184 Pages
-                                </option>    
-                                                                <option  value="185">
+                                </option>
+                                <option value="185">
                                     46250 Words - 185 Pages
-                                </option>    
-                                                                <option  value="186">
+                                </option>
+                                <option value="186">
                                     46500 Words - 186 Pages
-                                </option>    
-                                                                <option  value="187">
+                                </option>
+                                <option value="187">
                                     46750 Words - 187 Pages
-                                </option>    
-                                                                <option  value="188">
+                                </option>
+                                <option value="188">
                                     47000 Words - 188 Pages
-                                </option>    
-                                                                <option  value="189">
+                                </option>
+                                <option value="189">
                                     47250 Words - 189 Pages
-                                </option>    
-                                                                <option  value="190">
+                                </option>
+                                <option value="190">
                                     47500 Words - 190 Pages
-                                </option>    
-                                                                <option  value="191">
+                                </option>
+                                <option value="191">
                                     47750 Words - 191 Pages
-                                </option>    
-                                                                <option  value="192">
+                                </option>
+                                <option value="192">
                                     48000 Words - 192 Pages
-                                </option>    
-                                                                <option  value="193">
+                                </option>
+                                <option value="193">
                                     48250 Words - 193 Pages
-                                </option>    
-                                                                <option  value="194">
+                                </option>
+                                <option value="194">
                                     48500 Words - 194 Pages
-                                </option>    
-                                                                <option  value="195">
+                                </option>
+                                <option value="195">
                                     48750 Words - 195 Pages
-                                </option>    
-                                                                <option  value="196">
+                                </option>
+                                <option value="196">
                                     49000 Words - 196 Pages
-                                </option>    
-                                                                <option  value="197">
+                                </option>
+                                <option value="197">
                                     49250 Words - 197 Pages
-                                </option>    
-                                                                <option  value="198">
+                                </option>
+                                <option value="198">
                                     49500 Words - 198 Pages
-                                </option>    
-                                                                <option  value="199">
+                                </option>
+                                <option value="199">
                                     49750 Words - 199 Pages
-                                </option>    
-                                                                <option  value="200">
+                                </option>
+                                <option value="200">
                                     50000 Words - 200 Pages
-                                </option>    
-                                                            </select>
+                                </option>
+                            </select>
                         </div>
 
                         <div class="flex flex-col">
@@ -1283,9 +1286,9 @@
                     <h4 class=" text-xl font-bold text-white mb-4">Contact Us</h4>
 
                     <div class="space-x-3 text-white font-semibold">
-                        <a href="https://api.whatsapp.com/send?phone=447565181186"><i class="fa fa-whatsapp  hover:text-black" style="font-size: 30px;"></i></a>
-                        <a href="tel:447565181186"><i class="fa fa-phone  hover:text-black" style="font-size: 30px;"></i></a>
-                        <a href="mailto:info@assignmentexpertglobal.com"><i class="fa fa-envelope  hover:text-black" style="font-size: 30px;"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=447565181186" aria-label="Contact us on WhatsApp"><i class="fa fa-whatsapp  hover:text-black" style="font-size: 30px;"></i></a>
+                        <a href="tel:447565181186" aria-label="Call us"><i class="fa fa-phone  hover:text-black" style="font-size: 30px;"></i></a>
+                        <a href="mailto:info@assignmentexpertglobal.com" aria-label="Email us"><i class="fa fa-envelope  hover:text-black" style="font-size: 30px;"></i></a>
                     </div>
 
                 </div>
