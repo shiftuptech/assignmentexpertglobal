@@ -25,8 +25,8 @@ section.bg.bg-no-repeat.bg-center.bg-cover {
     background-image: url(./../imgs/rr.png);
 }
     section.bg.bg-no-repeat.bg-center.bg-cover .form-select {
-       
-        border-color: rgb(214 239 252) !important;
+
+        border-color: rgb(189 214 227) !important;
     }
 .border-4.border-primary-two.mx-auto.sm\:mx-0.rounded-\[1rem\].px-2.md\:px-8.pt-10.space-y-1.md\:space-y-4 {
     border-color: #cbebfa;
@@ -44,7 +44,7 @@ h1.text-3xl.md\:text-5xl.leading-tight.font-extrabold.text-gray-800.mb-4, h2.tex
     text-shadow: 3px 3px 8px #c7ecfb57 !important;
 }
 .text-box {
-    border-color: rgb(214 239 252) !important;
+    border-color: rgb(189 214 227) !important;
     box-shadow: 8px 10px 8px 4px #c7ecfb;
     padding: 40px 35px !important;
     text-align: justify;
