@@ -25,8 +25,8 @@ section.bg.bg-no-repeat.bg-center.bg-cover {
     background-image: url(./../imgs/assignment-bg.jpg);
 }
     section.bg.bg-no-repeat.bg-center.bg-cover .form-select {
-       
-        border-color: rgb(214 239 252) !important;
+
+        border-color: rgb(189 214 227) !important;
     }
 .border-4.border-primary-two.mx-auto.sm\:mx-0.rounded-\[1rem\].px-2.md\:px-8.pt-10.space-y-1.md\:space-y-4 {
     border-color: #cbebfa;
