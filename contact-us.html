@@ -1028,10 +1028,11 @@
                 utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             });
             $('#contact-form').on('submit', function(e) {
-                e.preventDefault();
-
+                $('#contact-form').find(':submit').attr("disabled", true);
+                $('#btn-submit').html("Submiting...");
                 const phoneNumber = phoneInput.getNumber();
                 $('#phone2').val(phoneNumber);
+                return true;
             });
         });
     </script>
