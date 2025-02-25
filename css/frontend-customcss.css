@@ -195,3 +195,43 @@ p.list-styling {
 li.human-writing__item.fw-medium.d-flex.flex-ai-c {
     margin: 15px 0px;
 }
+.fixed-btn {
+    position: fixed;
+    left: 17px;
+    bottom: 14px;
+    z-index: 10;
+    background: #00b482;
+    color: #fff;
+    border-radius: 23px;
+    padding: 10px;
+    font-size: 19px;
+    width: 240px;
+    text-align: center;
+}
+.discount-offer {
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: heartBeat;
+    animation-timing-function: ease-in-out;
+    display: inline-block;
+}
+a.fixed-btn.discount-offer:hover {
+    color: white;
+}
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.05);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
