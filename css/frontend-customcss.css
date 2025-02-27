@@ -235,3 +235,63 @@ a.fixed-btn.discount-offer:hover {
         transform: scale(1);
     }
 }
+
+footer-container {
+    padding-top: 6.6rem;
+    padding-bottom: 1rem;
+}
+@media (min-width: 1160px) {
+    .footer-container {
+        max-width: 1350px !important
+    }
+}
+.footer-ribbon {
+    padding: 9px 20px 5px;
+}
+.footer-ribbon {
+    position: absolute;
+    top: 0;
+    margin: -16px 0 0;
+    padding: 10px 20px 6px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    z-index: 101;
+    background-color: #0088cc;
+    font-family: "Shadows Into Light", sans-serif;
+    font-weight: 400;
+}
+    .footer-ribbon:before {
+        content: "";
+        display: block;
+        height: 0;
+        position: absolute;
+        top: 0;
+        width: 7px;
+        right: 100%;
+        border-right: 10px solid #005580;
+        border-top: 16px solid transparent;
+    }
+
+.mainmenu {
+    z-index: 999 !important;
+}
+.footer .text-grey {
+    color: #a8a8a8;
+    font-size: 14px;
+    text-align: justify;
+}
+    .footer .text-grey li a {
+        color: #a8a8a8;
+        font-size: 14px;
+    }
+.footer h4 {
+    font-size: 18px;
+}
+.footer-container {
+    border-bottom: 1px solid #3a3a3a;
+}
+.container.text-gray.mx-auto.px-10.flex.flex-col.justify-center {
+    color: #7a7a7a;
+    font-size: 14px;
+}
