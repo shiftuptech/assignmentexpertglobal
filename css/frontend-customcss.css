@@ -470,7 +470,71 @@ footer-container {
         width: 141px;
     }
 }
-
+.slide-text {
+    padding: 0 55px;
+}
+img.inner-image.short {
+    width: 35%;
+}
 @media screen and (max-width: 768px) {
-
+    .slide-text {
+        padding: 0 0 !important;
+    }
+    p.text-3xl.font-bold.lg\:font-medium.lg\:text-\[41px\].md\:leading-\[3\.5rem\] {
+        font-size: 38px !important;
+        background: -webkit-linear-gradient(25deg, #1975fd 26%, #1146a6 84%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        text-transform: unset !important;
+        font-family: Poppins, sans-serif;
+        line-height: 1.3;
+    }
+    img.underline12 {
+        display: none !important;
+    }
+    .mx-auto.lg\:mx-0.sm\:max-w-sm.md\:max-w-md.lg\:max-w-lg.relative.text-white.rounded-\[2\.5rem\] {
+        width: 100% !important;
+    }
+    section.bg.bg-no-repeat.bg-center.bg-cover select.form-select {
+        margin-top: 15px;
+    }
+    .paragraph-about {
+        padding-right: 0px !important;
+        text-align: justify;
+    }
+    .inner-box {
+        padding: 5px !important;
+    }
+    h2.ekit-heading--title.elementskit-section-title {
+        font-size: 40px !important;
+        font-weight: 700;
+        padding: 25px !important;
+        color: white;
+    }
+    .elementor-widget-container {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+        h2.ekit-heading--title.elementskit-section-title span {
+            color: #152132 !important;
+        }
+    p.text-justify {
+        text-align: justify;
+    }
+    .human-writing {
+        --columns-quantity: 1;
+        display: block !important;
+        grid-template-columns: repeat(var(--columns-quantity), 1fr);
+        grid-column-gap: 85px;
+        grid-row-gap: var(--item-row-space);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 675px;
+        margin-top: 40px;
+    }
+    img.inner-image {
+        margin: auto;
+        width: 50% !important;
+    }
 }
