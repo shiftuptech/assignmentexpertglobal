@@ -537,4 +537,29 @@ img.inner-image.short {
         margin: auto;
         width: 50% !important;
     }
+    form.signup input.form-input {
+        box-shadow: rgb(92 92 92 / 20%) 5px 5px 7px 0px !important;
+        font-size: 16px !important;
+        padding: 3px 12px !important;
+        color: #5c5c5c !important;
+        border-color: rgb(189 214 227) !important;
+        margin-bottom: 30px;
+    }
+}
+form.signup {
+    margin-top: 45px;
+}
+    form.signup input.form-input {
+        box-shadow: rgb(92 92 92 / 20%) 5px 5px 7px 0px !important;
+        font-size: 16px !important;
+        padding: 3px 12px !important;
+        color: #5c5c5c !important;
+        border-color: rgb(189 214 227) !important;
+       
+    }
+form.signup button.bg-primary-one.text-white.rounded.py-2.px-6.discount-offer.rounded-pill {
+    width: 80%;
+}
+h3.signup-heding {
+    font-size: 1.55rem;
 }
