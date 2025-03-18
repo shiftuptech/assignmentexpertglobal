@@ -22,7 +22,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, li, div, select {
 }
 section.bg.bg-no-repeat.bg-center.bg-cover {
     /* background: #addaf1;*/
-    background-image: url(./../imgs/assignment-bg.svg);
+    background-image: url(./../imgs/assignment-bg.jpg);
     background-color: #edf5f8;
 }
     section.bg.bg-no-repeat.bg-center.bg-cover .form-select {
