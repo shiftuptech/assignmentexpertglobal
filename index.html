@@ -185,6 +185,19 @@
     gtag('js', new Date());
   
     gtag('config', 'AW-11533758578');
+
+    function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11533758578/-RC9CMf5ua4aEPLg3Psq',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
     <!--<style>-->
     <!--  .marquee-container {-->
@@ -543,7 +556,7 @@
                         </div>
 
                         <div class="flex flex-col justify-center items-center relative -top-6">
-                            <button type="submit" id="btn-submit" class="btn whitespace-nowrap">
+                            <button type="submit" id="btn-submit" class="btn whitespace-nowrap" onclick="gtag_report_conversion();">
                                 GET MY DISCOUNT
                             </button>
                         </div>
